@@ -384,6 +384,19 @@
         }
         
         @media (max-width: 768px) {
+            .values {
+                display: grid;  
+                grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+                gap: 10px 15px; /* espace vertical et horizontal */
+                justify-items: center; /* centre le texte dans chaque colonne */
+                align-items: center;
+            }
+
+            .value-item {
+                width: 100%; /* chaque mot prend bien sa case */
+                text-align: center;
+            }
+
             .main-title {
                 font-size: 2.5rem;
             }
